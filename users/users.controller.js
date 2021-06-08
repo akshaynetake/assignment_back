@@ -10,7 +10,6 @@ class UserController {
     }
 
     async registerUser(req, res) {
-        console.log("this is the register", req.body)
         const data = {
             name: req.body.name != undefined ? req.body.name.trim() : '' || '',
             email: req.body.email != undefined ? req.body.email.toLowerCase().trim() : '' || '',
